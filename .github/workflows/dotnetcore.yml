@@ -21,3 +21,5 @@ jobs:
       run: dotnet build --configuration Release
     - name: SonarCloud Scan
       uses: SonarSource/sonarcloud-github-action@v1.1
+      env:
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
